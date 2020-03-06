@@ -6,17 +6,17 @@
     <script>
         $(document).ready(function () {
             $("#but1").click(function () {
-                $("#test_1, #test_3").hide();
+                $('.MsoNormal:even').hide();
             });
             $("#but2").click(function () {
-                $("#test_1, #test_3").show();
+                $('.MsoNormal:even').show();
             });
         });
     </script>
     </head>
     <style>
             .MsoNormal { 
-             width: 445px; 
+             width: 480px; 
              background: #f0f0f0;
              border: 1px solid #333;
              padding: 8px;
@@ -25,11 +25,11 @@
             }
     </style>
     <body>
-            <button id="but1">Скрыть нечетный элемент списка</button>
-             <button id="but2">Показать нечетный элемент списка</button>
-             <p id="test_1" class="MsoNormal" >1. JavaScript реагирует на происходящие события.</p>
+            <button id="but1">Скрыть нечетный элемент</button>
+             <button id="but2">Показать нечетный элемент</button>
+             <p class="MsoNormal" >1. JavaScript реагирует на происходящие события.</p>
              <p class="MsoNormal" >2. JavaScript может читать и писать HTML элементы.</p>
-             <p id="test_3" class="MsoNormal" >3. JavaScript может использоваться для проверки данных.</p>
+             <p class="MsoNormal" >3. JavaScript может использоваться для проверки данных.</p>
              <p class="MsoNormal" >4. JavaScript может использоваться для создание cookies.</p>
     </body>
 </html>
